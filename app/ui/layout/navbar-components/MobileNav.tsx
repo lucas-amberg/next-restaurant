@@ -19,10 +19,10 @@ export default function MobileNav() {
       <div className={`${inter.className} text-center text-xl`}>
         <Fade cascade direction='right' damping={0.1}>
           <Link href="/">Home</Link>
-          <Link href="/">Menu</Link>
+          <Link href="/menu">Menu</Link>
           <Link href="/about-us">About</Link>
-          <Link href="/">Reservations</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/reservations">Reservations</Link>
+          <Link href="/contact">Contact</Link>
         </Fade>
       </div>
     </Menu>
