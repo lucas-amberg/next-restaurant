@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-white w-screen h-screen">
+    <main className="bg-white w-screen">
       <div className="sushi-background h-64 bg-black font-bold text-white flex items-end p-10 text-3xl">
         <SushiText/>
       </div>

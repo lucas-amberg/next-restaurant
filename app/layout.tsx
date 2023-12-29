@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 const diphylleia = Diphylleia( { subsets: ['latin'], weight: '400'} )
 
 import Navbar from '@/app/ui/layout/Navbar'
+import Footer from '@/app/ui/layout/footer/Footer'
 
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={diphylleia.className}>
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
