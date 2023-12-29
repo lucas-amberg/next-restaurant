@@ -1,9 +1,14 @@
-"use client";
 
-import { Fade } from "react-awesome-reveal"
 
 import HeaderDesc from "@/app/ui/layout/HeaderDesc";
 import FancyButton from "./ui/layout/FancyButton";
+import SushiText from "@/app/ui/layout/homepage-components/SushiText";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Dal'
+}
 
 //This is the home page, the plan for the format will be:
 
@@ -19,7 +24,7 @@ export default function Home() {
   return (
     <main className="bg-white w-screen h-screen">
       <div className="sushi-background h-64 bg-black font-bold text-white flex items-end p-10 text-3xl">
-        <Fade className="shadow-lg" cascade damping={0.1} direction="up">Experience Sushi</Fade>
+        <SushiText/>
       </div>
       <HeaderDesc 
         header="A Taste of Tokyo" 

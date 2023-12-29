@@ -17,9 +17,9 @@ const carattere = Carattere({subsets: ['latin'], weight: '400'});
 export default function Navbar() {
   
   return(
-    <div className={`${carattere.className} h-16 bg-gray-300 flex items-center p-4 `}>
+    <div className={`${carattere.className} h-16 bg-gray-900 flex items-center p-4 `}>
       <Fade direction={'left'} triggerOnce={true}>
-        <Link href='/' className="text-4xl text-black">
+        <Link href='/' className="text-4xl text-white">
           Dal
         </Link>
       </Fade>
