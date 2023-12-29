@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sushi-background {
+  background-image: url('./lib/images/home-header.jpeg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

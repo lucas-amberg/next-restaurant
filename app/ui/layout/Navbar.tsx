@@ -3,19 +3,25 @@
 import { Carattere } from "next/font/google"
 
 import { Fade } from 'react-awesome-reveal'
+import Link from "next/link";
 
 import MobileNav from "./navbar-components/MobileNav";
 
 const carattere = Carattere({subsets: ['latin'], weight: '400'});
 
+//This NavBar component will sit at every page
+
+//MobileNav is the burger menu shown on mobile screens
+//DesktopNav (not implemented yet) is the header links which will be shown on larger
+//screens
 export default function Navbar() {
   
   return(
-    <div className={`${carattere.className} h-16 bg-gray-300 flex items-center p-4`}>
+    <div className={`${carattere.className} h-16 bg-gray-300 flex items-center p-4 `}>
       <Fade direction={'left'} triggerOnce={true}>
-        <div className="text-4xl">
+        <Link href='/' className="text-4xl text-black">
           Dal
-        </div>
+        </Link>
       </Fade>
       <MobileNav/>
     </div>
