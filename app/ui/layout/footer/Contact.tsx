@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+//This is the contact section in the footer of the page with the address,
+//phone number, and email
 export default function Contact() {
   return(
     <div className="text-white">

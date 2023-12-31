@@ -1,3 +1,5 @@
+
+//This is the copyright notice in the footer of the page
 export default function Copyright() {
   return(
     <a href='https://lucasamberg.dev' className="text-white w-full text-center block text-sm">

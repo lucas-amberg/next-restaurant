@@ -6,6 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 import { Diphylleia } from 'next/font/google';
 const diphylleia = Diphylleia( { subsets: ['latin'], weight: '400'} );
 
+//This is the links shown at the top of the page on larger screens
 export default function DesktopNav() {
   return(
     <Fade direction="right">

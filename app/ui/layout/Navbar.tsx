@@ -13,7 +13,7 @@ const carattere = Carattere({subsets: ['latin'], weight: '400'});
 //This NavBar component will sit at every page
 
 //MobileNav is the burger menu shown on mobile screens
-//DesktopNav (not implemented yet) is the header links which will be shown on larger
+//DesktopNav is the header links which will be shown on larger
 //screens
 export default function Navbar() {
   

@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Carattere } from "next/font/google"
 const carattere = Carattere({subsets: ['latin'], weight: '400'});
 
+//This is the links in the footer
 export default function QuickLinks() {
   return(
     <div className="flex flex-col text-white">

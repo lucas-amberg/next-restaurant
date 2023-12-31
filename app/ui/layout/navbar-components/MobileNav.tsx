@@ -13,6 +13,7 @@ import "@/app/ui/layout/navbar-components/burger-styles.css"
 
 import Link from 'next/link'
 
+//This is the burger meny shown in the navbar on mobile screens
 export default function MobileNav() {
   return(
     <Menu width={260} right className='lg:hidden'>
