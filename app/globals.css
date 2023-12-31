@@ -4,9 +4,10 @@
 
 
 .sushi-background,
-.about-us-header {
+.about-us-header,
+.reservations-header {
   background-position: center;
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
 }
 
@@ -17,4 +18,8 @@
 
 .about-us-header {
   background-image: url('./lib/images/about-us-header.jpeg');
+}
+
+.reservations-header {
+  background-image: url('./lib/images/reservations-header.jpeg');
 }

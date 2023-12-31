@@ -16,11 +16,11 @@ export default function AboutUs() {
       <SubHeader text={'About Us'} className="about-us-header"/>
       <HeaderDesc header="From Japan" description={firstPartDesc}/>
       <div className="flex items-center justify-center">
-        <Image className='h-5/6 w-5/6' src='/about-us-image1.jpeg' width={600} height={600} alt="a set of tasty sushi on a table in a japanese restaurant"/>
+        <Image className='h-5/6 w-5/6 lg:h-3/4 lg:w-3/4' src='/about-us-image1.jpeg' width={600} height={600} alt="a set of tasty sushi on a table in a japanese restaurant"/>
       </div>
       <HeaderDesc header="To America" description={secondPartDesc}/>
       <div className="flex items-center justify-center">
-        <Image className='h-5/6 w-5/6' src='/about-us-image2.jpeg' width={600} height={600} alt="chef in the kitchen Japanese sushi bar"/>
+        <Image className='h-5/6 w-5/6 lg:h-3/4 lg:w-3/4' src='/about-us-image2.jpeg' width={600} height={600} alt="chef in the kitchen Japanese sushi bar"/>
       </div>
       <HeaderDesc header="And Today" description={thirdPartDesc}/>
       <FancyButton
