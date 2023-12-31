@@ -6,6 +6,7 @@ import { Fade } from 'react-awesome-reveal'
 import Link from "next/link";
 
 import MobileNav from "./navbar-components/MobileNav";
+import DesktopNav from "./navbar-components/DesktopNav";
 
 const carattere = Carattere({subsets: ['latin'], weight: '400'});
 
@@ -17,13 +18,14 @@ const carattere = Carattere({subsets: ['latin'], weight: '400'});
 export default function Navbar() {
   
   return(
-    <div className={`${carattere.className} h-16 bg-gray-900 flex items-center p-4 `}>
+    <div className={`${carattere.className} h-16 bg-gray-900 flex items-center p-4 justify-between`}>
       <Fade direction={'left'} triggerOnce={true}>
         <Link href='/' className="text-4xl text-white">
           Dal
         </Link>
       </Fade>
       <MobileNav/>
+      <DesktopNav/>
     </div>
   )
 }

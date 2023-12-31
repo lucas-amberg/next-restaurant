@@ -66,3 +66,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   opacity: 0 !important;
 }
+
+@media only screen and (min-width: 1024px) {
+  .bm-burger-button {
+    display: none;
+  }
+}

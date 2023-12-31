@@ -15,7 +15,7 @@ import Link from 'next/link'
 
 export default function MobileNav() {
   return(
-    <Menu width={260} right>
+    <Menu width={260} right className='lg:hidden'>
       <div className={`${inter.className} text-center text-xl`}>
         <Fade cascade direction='right' damping={0.1}>
           <Link href="/">Home</Link>

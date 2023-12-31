@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={diphylleia.className}>
+      <body className={`${diphylleia.className} overflow-x-hidden`}>
         <Navbar/>
         {children}
         <Footer/>
