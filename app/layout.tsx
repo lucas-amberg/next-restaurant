@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import { Diphylleia } from 'next/font/google'
 import './globals.css'
 
+import { Suspense } from 'react'
+
 const inter = Inter({ subsets: ['latin'] })
 const diphylleia = Diphylleia( { subsets: ['latin'], weight: '400'} )
 
@@ -27,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${diphylleia.className} overflow-x-hidden`}>
         <Navbar/>
-        {children}
+        <Suspense>{children}</Suspense>
         <Footer/>
       </body>
     </html>
