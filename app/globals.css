@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.sushi-background {
-  background-image: url('./lib/images/home-header.jpeg');
+
+.sushi-background,
+.about-us-header {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.sushi-background {
+  background-image: url('./lib/images/home-header.jpeg');
+  
+}
+
+.about-us-header {
+  background-image: url('./lib/images/about-us-header.jpeg');
 }

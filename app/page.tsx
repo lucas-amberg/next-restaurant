@@ -8,6 +8,8 @@ import Link from "next/link";
 
 import { Metadata } from "next";
 
+import SubHeader from "@/app/ui/layout/SubHeader";
+
 export const metadata: Metadata = {
   title: 'Dal'
 }
@@ -25,9 +27,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="bg-white w-screen">
-      <div className="sushi-background h-64 bg-black font-bold text-white flex items-end p-10 text-3xl">
-        <SushiText/>
-      </div>
+      <SubHeader text={"Experience Sushi"} className="sushi-background"/>
       <HeaderDesc 
         twClass="shadow-lg"
         header="A Taste of Tokyo" 
