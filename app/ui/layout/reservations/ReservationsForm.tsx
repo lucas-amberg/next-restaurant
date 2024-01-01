@@ -15,8 +15,10 @@ function SubmitButton() {
   )
 }
 
+//This form is responsible for reservations
 export default function ReservationsForm() {
 
+  //This hook is what calls the function to submit form data to the database
   const [state, formAction] = useFormState(createReservation, initialState)
 
   //This code gets the minimum date for the form
@@ -39,13 +41,13 @@ export default function ReservationsForm() {
   return (
     <form className='flex flex-col items-center p-6 gap-4' action={formAction}>
       <label className='font-bold' htmlFor="name">Name for Reservation:</label>
-      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="text" id="name" name='name' required />
+      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="text" id="name" name='name' minLength={1} required />
       <label className='font-bold' htmlFor="email">Email Address:</label>
-      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="email" id="email" name='email' required />
+      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="email" id="email" name='email' minLength={1} required />
       <label className='font-bold' htmlFor="number">Phone Number:</label>
-      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="text" id="number" name='number' required />
+      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="text" id="number" name='number' minLength={10} required />
       <label className='font-bold' htmlFor="size">Party Size:</label>
-      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="number" id="size" name='size' min='0' max='20' required />
+      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="number" id="size" name='size' min='0' max='30' required />
       <label className='font-bold' htmlFor="date">Reservation Date and Time:</label>
       <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="datetime-local" id="date" name='date' min={today} required />
       <SubmitButton/>
