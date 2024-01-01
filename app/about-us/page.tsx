@@ -4,7 +4,14 @@ import Image from "next/image";
 
 import FancyButton from "../ui/layout/FancyButton";
 
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'About Us'
+}
+
+//The purpose of this page is to tell information about the history of the website
+//and its founding
 export default function AboutUs() {
 
   const firstPartDesc = 'With over a decade of seasoned expertise, our founder Miyamoto Dal confronted a pivotal juncture in 1972, departing from his esteemed role as sensei at Tokyo\'s Sushi Kuaraha. The decision, driven by both a decade-long immersion in the art of sushi and a desire to transcend borders, marked the beginning of a transformative journey.';

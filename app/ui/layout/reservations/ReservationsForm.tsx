@@ -19,6 +19,22 @@ export default function ReservationsForm() {
 
   const [state, formAction] = useFormState(createReservation, initialState)
 
+  //This code gets the minimum date for the form
+  let today:any = new Date();
+  let dd:any = today.getDate();
+  let mm:any = today.getMonth() + 1;
+  const yyyy = today.getFullYear();
+
+  if (dd < 10) {
+    dd = '0'.concat(dd);
+  }
+  if (mm < 10) {
+    mm = '0'.concat(mm);
+  }
+
+  today = yyyy + '-' + mm + '-' + dd;
+
+
 
   return (
     <form className='flex flex-col items-center p-6 gap-4' action={formAction}>
@@ -30,6 +46,8 @@ export default function ReservationsForm() {
       <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="text" id="number" name='number' required />
       <label className='font-bold' htmlFor="size">Party Size:</label>
       <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="number" id="size" name='size' min='0' max='20' required />
+      <label className='font-bold' htmlFor="date">Reservation Date and Time:</label>
+      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="datetime-local" id="date" name='date' min={today} required />
       <SubmitButton/>
       <p>
         {state?.message}

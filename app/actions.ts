@@ -9,22 +9,24 @@ export async function createReservation(prevState: any, formData: FormData) {
     name: z.string().min(1),
     email: z.string().min(1),
     number: z.string().min(1),
-    partySize: z.string().min(1)
+    partySize: z.string().min(1),
+    date: z.string().min(1)
   })
 
   const data = schema.parse({
     name: formData.get('name'),
     email: formData.get('email'),
     number: formData.get('number'),
-    partySize: formData.get('size')
+    partySize: formData.get('size'),
+    date: formData.get('date')
   })
 
   try {
     await sql`
-    INSERT INTO reservations (name, email, number, partySize)
-    VALUES (${data.name}, ${data.email}, ${data.number}, ${data.partySize})`
+    INSERT INTO reservations (name, email, number, partySize, date)
+    VALUES (${data.name}, ${data.email}, ${data.number}, ${data.partySize}, ${data.date})`
 
-    return { message: "Added new reservation"}
+    return { message: "Successfully added your reservation"}
   }
   catch (e) {
     console.log(e)
