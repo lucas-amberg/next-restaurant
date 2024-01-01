@@ -6,7 +6,7 @@ import { useFormStatus } from "react-dom"
 import { createReservation } from "@/app/actions"
 
 const initialState = {
-  message: null,
+  message: "",
 }
 
 function SubmitButton() {
