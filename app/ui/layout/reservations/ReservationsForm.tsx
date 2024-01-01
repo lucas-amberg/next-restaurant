@@ -49,7 +49,7 @@ export default function ReservationsForm() {
       <label className='font-bold' htmlFor="size">Party Size:</label>
       <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="number" id="size" name='size' min='0' max='30' required />
       <label className='font-bold' htmlFor="date">Reservation Date and Time:</label>
-      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="datetime-local" id="date" name='date' min={today} required />
+      <input className='border-gray-900 border-solid border-2 rounded-lg p-2' type="datetime-local" step={60*15} id="date" name='date' min={today} required />
       <SubmitButton/>
       <p>
         {state?.message}
