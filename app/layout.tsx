@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     default: 'Dal'
   },
   description: 'Dal is a premium sushi restaurant located in Costa Mesa, CA',
+  metadataBase: new URL("https://https://next-restaurant-weld.vercel.app")
 }
 
 export default function RootLayout({
