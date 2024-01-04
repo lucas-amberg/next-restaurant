@@ -6,7 +6,8 @@
 .sushi-background,
 .about-us-header,
 .reservations-header,
-.menu-header {
+.menu-header,
+.contact-header {
   background-position: center;
   background-size: 120%;
   background-repeat: no-repeat;
@@ -27,4 +28,8 @@
 
 .menu-header {
   background-image: url('./lib/images/menu-header.jpeg');
+}
+
+.contact-header {
+  background-image: url('./lib/images/contact-header.jpeg');
 }

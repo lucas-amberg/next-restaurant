@@ -45,7 +45,7 @@ export default function Menu() {
       <Wine/>
       <MenuHeader title="Cocktails"/>
       <Cocktails/>
-      <div className="p-5 text-center">
+      <div className="p-10 text-center">
         Consuming raw or uncooked meats, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions. 
       </div>
     </div>
