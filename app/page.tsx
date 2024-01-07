@@ -11,8 +11,7 @@ import { Metadata } from "next";
 import SubHeader from "@/app/ui/layout/SubHeader";
 
 export const metadata: Metadata = {
-  title: 'Dal',
-  metadataBase: new URL("https://https://next-restaurant-weld.vercel.app")
+  title: 'Dal'
 }
 
 //This is the home page, the plan for the format will be:
