@@ -10,7 +10,6 @@ export async function fetchReservationData() {
     ORDER BY date ASC`;
 
     const reservationData = data.rows
-    console.log(reservationData);
     return reservationData;
   } catch (error) {
     console.error('Database error: ', error);

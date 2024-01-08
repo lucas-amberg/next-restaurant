@@ -1,3 +1,5 @@
+"use server";
+
 import { fetchReservationData } from "@/app/lib/data"
 
 type Reservation = 
@@ -21,7 +23,6 @@ function reservationCard({name, email, number, partysize, date}: {name?: string,
 export default async function Reservations() {
 
   const reservations = await fetchReservationData();
-  console.log(reservations[0].name);
 
   const reservationsArray = [];
 

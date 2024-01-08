@@ -12,9 +12,7 @@ export default function AdminLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} overflow-x-hidden`}>
-        <div>
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   )
