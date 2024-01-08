@@ -9,7 +9,7 @@ export default function ContactForm() {
       <label htmlFor="email">Email Address:</label>
       <input className="border-solid border-2 border-gray-900 rounded-lg p-2" type="email" id="email" name="email" />
       <label htmlFor="message">Message:</label>
-      <textarea className="border-solid border-2 border-gray-900 rounded-lg p-2" id='message' name='message' rows={5} cols={28}/>
+      <textarea className="border-solid border-2 border-gray-900 rounded-lg p-2" id='message' name='message' rows={5} cols={20}/>
       <button className="p-4 bg-gray-900 pl-12 pr-12 m-4 text-white rounded-lg shadow-lg">Send Message</button>
     </form>
   )
