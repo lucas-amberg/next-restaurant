@@ -8,11 +8,15 @@ export const authConfig = {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
       const isViewingReservations = nextUrl.pathname.startsWith('/admin/reservations');
+      const isViewingLogin = nextUrl.pathname.startsWith('/admin');
       if (isViewingReservations) {
         if (isLoggedIn) return true;
         return false; // Redirect unauthenticated users to login page
-      } else if (isLoggedIn) {
+      } else if (isViewingLogin && isLoggedIn) {
         return Response.redirect(new URL('/admin/reservations', nextUrl));
+      }
+      else if (isLoggedIn && !isViewingReservations) {
+        return true;
       }
       return true
     },
