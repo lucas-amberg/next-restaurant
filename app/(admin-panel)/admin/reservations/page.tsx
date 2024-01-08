@@ -1,6 +1,7 @@
 import { fetchReservationData, removeOldReservations } from "@/app/lib/data"
 import DeleteReservation from "@/app/ui/layout/DeleteReservation";
 import { Metadata } from "next";
+import Link from "next/link";
 
 import '@/app/globals.css'
 import { revalidatePath } from "next/cache";
@@ -49,6 +50,7 @@ export default async function Reservations() {
       <ul className="flex flex-col md:flex-row content-center items-center flex-wrap h-100 w-100 gap-6 p-4">
         {reservationsElements.length === 0 ? <div>There are no reservations</div> : reservationsElements}
       </ul>
+      <Link className='text-blue-500' href='/'>Return to Homepage</Link>
     </div>
   )
 }
