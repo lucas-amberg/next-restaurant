@@ -10,10 +10,8 @@ export default function AdminLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} overflow-x-hidden`}>
+      <main className={`${inter.className} overflow-x-hidden`}>
         {children}
-      </body>
-    </html>
+      </main>
   )
 }

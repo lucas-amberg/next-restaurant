@@ -1,12 +1,13 @@
 "use server";
 
 import { fetchReservationData } from "@/app/lib/data"
+import DeleteReservation from "@/app/ui/layout/DeleteReservation";
 
 type Reservation = 
   {name: string, email: string, number: string, partysize: string, date: string};
 
 
-function reservationCard({name, email, number, partysize, date}: {name?: string, email?: string, number?: string, partysize?: string, date?: string}) {
+function reservationCard({name, email, number, partysize, date, id}: {name?: string, email?: string, number?: string, partysize?: string, date?: string, id?: string}) {
   const newDate = date.split('T')
   
   return(
@@ -15,6 +16,7 @@ function reservationCard({name, email, number, partysize, date}: {name?: string,
       <div>{email}</div>
       <div>{number}</div>
       <div className="text-xl">{newDate[0]} at {newDate[1]}</div>
+      <DeleteReservation id={id}/>
     </li>
   )
 }
@@ -29,7 +31,7 @@ export default async function Reservations() {
   reservations.forEach((reservation) => reservationsArray.push(reservation));
 
   const reservationsElements = reservationsArray.map((reservation) => {
-    return reservationCard({name: reservation.name, email: reservation.email, number: reservation.number, partysize: reservation.partysize, date: reservation.date})
+    return reservationCard({name: reservation.name, email: reservation.email, number: reservation.number, partysize: reservation.partysize, date: reservation.date, id: reservation.id})
   })
 
   return(

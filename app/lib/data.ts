@@ -5,7 +5,7 @@ export async function fetchReservationData() {
   unstable_noStore();
   try { 
     const data = await sql`
-    SELECT name, email, number, partysize, date
+    SELECT name, email, number, partysize, date, id
     FROM reservations
     ORDER BY date ASC`;
 

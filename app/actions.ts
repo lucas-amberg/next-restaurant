@@ -23,10 +23,12 @@ export async function createReservation(prevState: any, formData: FormData) {
     date: formData.get('date')
   })
 
+  const id = Date.now().toString()
+
   try {
     await sql`
-    INSERT INTO reservations (name, email, number, partySize, date)
-    VALUES (${data.name}, ${data.email}, ${data.number}, ${data.partySize}, ${data.date})`
+    INSERT INTO reservations (name, email, number, partySize, date, id)
+    VALUES (${data.name}, ${data.email}, ${data.number}, ${data.partySize}, ${data.date}, ${id})`
 
     return { message: "Successfully added your reservation"}
   }
@@ -53,4 +55,19 @@ export async function authenticate(
     }
     throw error;
   }
+}
+
+export async function deleteReservation(id: string) {
+  try {
+        console.log(id)
+        await sql`DELETE FROM reservations WHERE id = ${id}`;
+        console.log('yo');
+        revalidatePath('/admin/reservations');
+    }
+    catch(error) {
+      console.error('Error deleting reservation: ', error);
+        return {
+            message: 'Database Error: failed to delete reservation.'
+        }
+    }
 }
