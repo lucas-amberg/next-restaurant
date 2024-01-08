@@ -2,18 +2,18 @@
 import { Metadata } from "next";
 
 import SubHeader from "@/app/ui/layout/SubHeader";
-import MenuHeader from "../ui/layout/menu-components/MenuHeader";
-import Starters from "../ui/layout/menu-components/Starters";
-import Nigiri from "../ui/layout/menu-components/Nigiri";
-import StandardRolls from "../ui/layout/menu-components/StandardRolls";
-import SpecialtyRolls from "../ui/layout/menu-components/SpecialtyRolls";
-import DalRolls from "../ui/layout/menu-components/DalRolls";
-import Drinks from "../ui/layout/menu-components/Drinks";
-import Beer from "../ui/layout/menu-components/Beer";
-import Wine from "../ui/layout/menu-components/Wine";
-import Cocktails from "../ui/layout/menu-components/Cocktails";
-import Sides from "../ui/layout/menu-components/Sides";
-import Desserts from "../ui/layout/menu-components/Desserts";
+import MenuHeader from "@/app/ui/layout/menu-components/MenuHeader";
+import Starters from "@/app/ui/layout/menu-components/Starters";
+import Nigiri from "@/app/ui/layout/menu-components/Nigiri";
+import StandardRolls from "@/app/ui/layout/menu-components/StandardRolls";
+import SpecialtyRolls from "@/app/ui/layout/menu-components/SpecialtyRolls";
+import DalRolls from "@/app/ui/layout/menu-components/DalRolls";
+import Drinks from "@/app/ui/layout/menu-components/Drinks";
+import Beer from "@/app/ui/layout/menu-components/Beer";
+import Wine from "@/app/ui/layout/menu-components/Wine";
+import Cocktails from "@/app/ui/layout/menu-components/Cocktails";
+import Sides from "@/app/ui/layout/menu-components/Sides";
+import Desserts from "@/app/ui/layout/menu-components/Desserts";
 
 export const metadata: Metadata = {
   title: 'Menu'

@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
-import SubHeader from "../../ui/layout/SubHeader";
-import HeaderDesc from "../../ui/layout/HeaderDesc";
-import ContactForm from "../../ui/layout/contact-components/ContactForm";
+import SubHeader from "@/app/ui/layout/SubHeader";
+import HeaderDesc from "@/app/ui/layout/HeaderDesc";
+import ContactForm from "@/app/ui/layout/contact-components/ContactForm";
 
 export const metadata: Metadata = {
   title: 'Contact Us'

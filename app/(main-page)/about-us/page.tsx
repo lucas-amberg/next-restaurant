@@ -1,8 +1,8 @@
-import SubHeader from "../ui/layout/SubHeader"
-import HeaderDesc from "../ui/layout/HeaderDesc"
+import SubHeader from "@/app/ui/layout/SubHeader"
+import HeaderDesc from "@/app/ui/layout/HeaderDesc"
 import Image from "next/image";
 
-import FancyButton from "../ui/layout/FancyButton";
+import FancyButton from "@/app/ui/layout/FancyButton";
 
 import { Metadata } from "next";
 
