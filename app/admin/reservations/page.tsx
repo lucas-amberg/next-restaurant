@@ -1,7 +1,10 @@
-"use server";
-
 import { fetchReservationData } from "@/app/lib/data"
 import DeleteReservation from "@/app/ui/layout/DeleteReservation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Admin Panel'
+}
 
 type Reservation = 
   {name: string, email: string, number: string, partysize: string, date: string};
@@ -14,7 +17,7 @@ function reservationCard({name, email, number, partysize, date, id}: {name?: str
     <li className="p-4 shadow-2xl rounded-md border-solid border-2 border-gray-900" key={`${number} ${date}`}>
       <div className="text-xl font-bold">{name} <span className="text-sm">({partysize} people)</span></div>
       <div>{email}</div>
-      <div>{number}</div>
+      <div>Phone number: {number}</div>
       <div className="text-xl">{newDate[0]} at {newDate[1]}</div>
       <DeleteReservation id={id}/>
     </li>

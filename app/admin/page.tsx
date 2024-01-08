@@ -1,5 +1,10 @@
 'use client';
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Login'
+}
 
 import LoginForm from "@/app/ui/layout/LoginForm"
 
