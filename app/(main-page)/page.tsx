@@ -1,8 +1,6 @@
-
-
 import HeaderDesc from "@/app/ui/layout/HeaderDesc";
 import FancyButton from "../ui/layout/FancyButton";
-import SushiText from "@/app/ui/layout/homepage-components/SushiText";
+import Reviews from "../ui/layout/homepage-components/reviews/Reviews";
 
 import Link from "next/link";
 
@@ -19,7 +17,6 @@ export const metadata: Metadata = {
 //Header
 //Image title
 //Description
-//Popular Items
 //Menu Button
 //Reviews
 //About us information
@@ -43,6 +40,7 @@ export default function Home() {
         href={'menu'}
         dark={true}
       />
+      <Reviews/>
       <div className="flex flex-col items-center p-4">
         <HeaderDesc
           header="Our Story"

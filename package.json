@@ -17,6 +17,7 @@
     "react-awesome-reveal": "^4.2.7",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18",
+    "react-rating-stars-component": "^2.2.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
