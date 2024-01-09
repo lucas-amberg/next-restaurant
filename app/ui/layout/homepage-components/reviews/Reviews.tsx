@@ -16,8 +16,10 @@ function Review({name, date, reviewContent, rating}: ReviewProp) {
     <div className="bg-gray-200 w-64 h-64 p-4 shadow-lg rounded-lg flex gap-2 flex-col">
       <h1 className="text-lg font-bold">{name}</h1>
       <h2>{date}</h2>
-      <p>{reviewContent === '' ? '' : `"${reviewContent}"`}</p>
-      <ReactStars value={rating} count={5} edit={false} size={36}/>
+      <p className="italic">{reviewContent === '' ? '' : `"${reviewContent}"`}</p>
+      <div className="mt-auto">
+        <ReactStars value={rating} count={5} edit={false} size={36}/>
+      </div>
     </div>
   )
 }
