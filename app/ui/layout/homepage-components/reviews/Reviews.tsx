@@ -1,4 +1,7 @@
+"use client";
+
 import HeaderDesc from "../../HeaderDesc";
+import ReactStars from 'react-rating-stars-component';
 
 type ReviewProp = {
   name: string,
@@ -8,9 +11,13 @@ type ReviewProp = {
 }
 
 function Review({name, date, reviewContent, rating}: ReviewProp) {
+  
   return(
-    <div className="bg-gray-200 w-64 h-48 shadow-lg rounded-lg">
-      
+    <div className="bg-gray-200 w-64 h-64 p-4 shadow-lg rounded-lg flex flex-col">
+      <h1 className="text-lg font-bold">{name}</h1>
+      <h2>{date}</h2>
+      <p>{`"${reviewContent}"`}</p>
+      <ReactStars value={rating} count={5} edit={false} size={36}/>
     </div>
   )
 }
