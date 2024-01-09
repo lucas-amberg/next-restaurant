@@ -19,7 +19,9 @@ export const metadata: Metadata = {
 //Header
 //Image title
 //Description
+//Popular Items
 //Menu Button
+//Reviews
 //About us information
 //Reservation button
 //Footer
