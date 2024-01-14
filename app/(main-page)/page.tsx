@@ -24,15 +24,17 @@ export const metadata: Metadata = {
 //Footer
 
 export default function Home() {
+
+  const tasteOfTokyoDesc = 'Our experienced sushi chefs embarked on a journey to America with the noble intention of bringing a taste of their homeland to a new audience. Hailing from the picturesque regions of Kyoto, Okinawa, and Tokyo, these culinary maestros bring with them a rich heritage of gastronomic excellence that has been passed down through generations. Their artistry in the realm of sushi is a testament to centuries of tradition, and their dedication to preserving authentic flavors is unwavering. With each meticulously crafted piece of sushi, they offer a glimpse into the profound cultural and culinary tapestry of Japan, ensuring that their patrons savor not just a meal but an immersive experience.'
+
+
   return (
     <main className="bg-white w-screen">
       <SubHeader text={"Experience Sushi"} className="sushi-background"/>
       <HeaderDesc 
         twClass="shadow-lg"
         header="A Taste of Tokyo" 
-        description="Our experienced sushi chefs came to America to share a 
-        bite of home. From Kyoto, to Okinawa, to Tokyo, our culinary expertise 
-        spans generations of tradition and centuries of authentic flavor."
+        description={tasteOfTokyoDesc}
       />
       <FancyButton
         title={'View our Menu'}

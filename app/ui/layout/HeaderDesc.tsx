@@ -7,7 +7,7 @@ export default function HeaderDesc({header, description, twClass}: {header?: str
   return(
     <div className={`${twClass} w-screen text-center p-6`}>
       <h1 className="text-bold text-2xl p-4 lg:text-3xl">{header}</h1>
-      <div className={`text-sm sm:text-md p-4 lg:pl-20 lg:pr-20`}>{description}</div>
+      <div className={`text-sm sm:text-md p-4 lg:pl-32 lg:pr-32`}>{description}</div>
     </div>
   )
 }
