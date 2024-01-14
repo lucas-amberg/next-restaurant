@@ -4,6 +4,7 @@ import QuickLinks from "@/app/ui/layout/footer/QuickLinks";
 import Contact from "@/app/ui/layout/footer/Contact";
 import Copyright from "@/app/ui/layout/footer/Copyright";
 
+//This is the footer component shown on each page
 export default function Footer() {
   return(
     <div className="bg-gray-900 p-6 w-screen">

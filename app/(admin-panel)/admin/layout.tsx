@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 
-
+// This is to remove the header and footer from the admin panel
 export default function AdminLayout({
   children,
 }: {

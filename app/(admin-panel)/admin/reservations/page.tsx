@@ -14,6 +14,8 @@ type Reservation =
   {name: string, email: string, number: string, partysize: string, date: string};
 
 
+// This component is the reservations themselves, it features all the info regarding
+// the reservation and a delete button to delete the reservation
 function reservationCard({name, email, number, partysize, date, id}: {name?: string, email?: string, number?: string, partysize?: string, date?: string, id?: string}) {
   const newDate = date.split('T')
   
@@ -28,19 +30,22 @@ function reservationCard({name, email, number, partysize, date, id}: {name?: str
   )
 }
 
-
+// This is the reservations panel page and it displays all of the reservations
+// from the database
 export default async function Reservations() {
 
-  const reservations = await fetchReservationData();
-
+  const reservations = await fetchReservationData(); // This variable stores all of the reservations
+ 
   const reservationsArray = [];
 
-  reservations.forEach((reservation) => reservationsArray.push(reservation));
+  reservations.forEach((reservation) => reservationsArray.push(reservation)); // This removes the reservations from whatever datatype the SQL returns them in and puts them in an array
 
+  // This function creates an array of ReservationCard elements from the reservations
   const reservationsElements = reservationsArray.map((reservation) => {
     return reservationCard({name: reservation.name, email: reservation.email, number: reservation.number, partysize: reservation.partysize, date: reservation.date, id: reservation.id})
   })
 
+  // This removes all of the old reservations from the array (date < currentDate)
   removeOldReservations(reservationsArray);
   revalidatePath('/admin/reservations');
 

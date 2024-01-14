@@ -1,5 +1,7 @@
 import MenuItem from "./MenuItem"
 
+
+//This shows all of the Dal Specialty Roll items on the menu
 export default function DalRolls() {
   return(
     <div className="p-6 flex items-center justify-center flex-row flex-wrap">

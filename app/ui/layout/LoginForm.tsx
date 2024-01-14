@@ -3,7 +3,10 @@
 import { useFormState, useFormStatus } from "react-dom";
 import { authenticate } from "@/app/actions";
 
+//This is the login form element to access the reservation panel
 export default function LoginForm() {
+
+  //This useFormState will access the authentication action to check if the credentials are valid
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
 
 
@@ -32,6 +35,7 @@ export default function LoginForm() {
   )
 }
 
+//This button will log the user in
 function LoginButton() {
   const {pending} = useFormStatus();
   return (

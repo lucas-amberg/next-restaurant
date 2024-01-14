@@ -1,3 +1,6 @@
+
+
+//This is the header for every subsection of the menu such as Staters, Drinks, etc.
 export default function MenuHeader({title}: {title: string}) {
   return(
     <div className="flex flex-col items-center justify-center h-20 gap-3">

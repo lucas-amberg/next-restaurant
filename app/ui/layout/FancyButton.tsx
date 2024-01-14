@@ -3,6 +3,7 @@ import Link from "next/link"
 //The purpose of this component is to create a button component which looks good on any page
 export default function FancyButton({title, buttonTitle, href, dark}: {title?: string, buttonTitle: string, href: string, dark: boolean}) {
   
+  //This object and the if statement will determine whether the component should be dark or not and will update the class as needed.
   let darkClass = {
     background: '',
     text: '',

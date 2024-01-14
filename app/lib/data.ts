@@ -2,6 +2,7 @@ import { sql } from "@vercel/postgres";
 import { unstable_noStore } from "next/cache";
 import { deleteReservation } from "../actions";
 
+//This function fetches all of the reservations from the SQL database
 export async function fetchReservationData() {
   unstable_noStore();
   try { 
@@ -18,6 +19,9 @@ export async function fetchReservationData() {
   }
 }
 
+//This function checks the date of all of the reservations when the admin
+//panel is accessed and removes all of the reservations from dates prior to the current
+//date
 export async function removeOldReservations(reservationsArray) {
   for (const reservation of reservationsArray) {
     const reservationDate = reservation.date.split('T')[0].split('-');

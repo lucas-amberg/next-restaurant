@@ -9,6 +9,7 @@ const initialState = {
   message: "",
 }
 
+//This button submits the reservation form
 function SubmitButton() {
   return(
     <button type='submit' className="bg-gray-900 text-white p-2 w-20 rounded-lg">Submit</button>

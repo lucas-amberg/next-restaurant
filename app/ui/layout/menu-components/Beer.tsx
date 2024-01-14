@@ -1,5 +1,6 @@
 import MenuItem from "./MenuItem"
 
+//This shows all of the Beer items on the menu
 export default function Beer() {
   return(
     <div className="p-6 flex items-center justify-center flex-row flex-wrap">

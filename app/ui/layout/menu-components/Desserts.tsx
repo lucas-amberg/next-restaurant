@@ -1,5 +1,6 @@
 import MenuItem from "./MenuItem"
 
+//This shows all of the Dessert items on the menu
 export default function Desserts() {
   return(
     <div className="p-6 flex items-center justify-center flex-row flex-wrap">

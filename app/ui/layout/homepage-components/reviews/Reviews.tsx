@@ -3,6 +3,7 @@
 import HeaderDesc from "../../HeaderDesc";
 import ReactStars from 'react-rating-stars-component';
 
+//This is the typing for the props for each review
 type ReviewProp = {
   name: string,
   date: string,
@@ -10,6 +11,8 @@ type ReviewProp = {
   rating: number
 }
 
+//This component is for each individual review showing the reviewer name, the
+//score in stars, and an optional comment
 function Review({name, date, reviewContent, rating}: ReviewProp) {
   
   return(

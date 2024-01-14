@@ -7,6 +7,7 @@ import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 import { redirect } from 'next/navigation';
 
+// This action creates the reservation from the formData and stores it in the database
 export async function createReservation(prevState: any, formData: FormData) {
   const schema = z.object({
     name: z.string().min(1),
@@ -39,6 +40,7 @@ export async function createReservation(prevState: any, formData: FormData) {
   }
 }
 
+// This verifies the admin credentials entered in the form on /admin
 export async function authenticate(
   prevState: string | undefined,
   formData: FormData,
@@ -58,6 +60,7 @@ export async function authenticate(
   }
 }
 
+// This deletes the reservation with the id inputted from the database
 export async function deleteReservation(id: string) {
   try {
         console.log(id)

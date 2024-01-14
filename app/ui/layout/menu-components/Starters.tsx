@@ -1,5 +1,6 @@
 import MenuItem from "./MenuItem"
 
+//This shows all of the Starter items on the menu
 export default function Starters() {
   return(
     <div className="p-6 flex items-center justify-center flex-row flex-wrap">

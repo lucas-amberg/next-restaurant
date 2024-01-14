@@ -19,10 +19,13 @@ export const metadata: Metadata = {
   title: 'Menu'
 }
 
+//This is the menu page and it displays all of the menu subsections
 export default function Menu() {
   return(
     <div>
       <SubHeader text="Menu" className="menu-header" position='start'/>
+
+      {/* Menu Start: */}
       <MenuHeader title='Starters'/>
       <Starters/>
       <MenuHeader title='Nigiri'/>
@@ -45,6 +48,8 @@ export default function Menu() {
       <Wine/>
       <MenuHeader title="Cocktails"/>
       <Cocktails/>
+
+      {/*Seafood disclaimer:*/}
       <div className="p-10 text-center">
         Consuming raw or uncooked meats, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions. 
       </div>

@@ -1,5 +1,9 @@
 import { useState } from "react"
 
+
+//This is the contact form which allows a user to submit a contact to email
+//It currently has no functionality because this website is not a real business,
+//however if it were it could be implemented using a library such as EmailJS
 export default function ContactForm() {
 
   return(

@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: 'Contact Us'
 }
 
+//This is the contact us page and it has the form for users to fill out
+//a message
 export default function Contact() {
   return(
     <div>

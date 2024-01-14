@@ -1,5 +1,6 @@
 import MenuItem from "./MenuItem"
 
+//This shows all of the Standard Roll items on the menu
 export default function StandardRolls() {
   return(
     <div className="p-6 flex items-center justify-center flex-row flex-wrap">
